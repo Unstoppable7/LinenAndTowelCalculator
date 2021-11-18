@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 42877170}
   m_Layer: 5
   m_Name: '#Hab'
-  m_TagString: Untagged
+  m_TagString: Bloque4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -308,7 +308,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Habitaciones: 300'
+  m_Text: 'Habitaciones: 0'
 --- !u!222 &42877173
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -871,7 +871,7 @@ GameObject:
   - component: {fileID: 234767528}
   m_Layer: 5
   m_Name: Content (8)
-  m_TagString: Untagged
+  m_TagString: Bloque4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -962,7 +962,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2
+  m_Text: 0
 --- !u!222 &234767531
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -986,7 +986,7 @@ GameObject:
   - component: {fileID: 276851113}
   m_Layer: 5
   m_Name: Content (1)
-  m_TagString: Untagged
+  m_TagString: Bloque1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1077,7 +1077,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Q2
+  m_Text: Q0
 --- !u!222 &276851116
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1313,7 +1313,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 331798705}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 512270732}
+        m_TargetAssemblyTypeName: FunctionOneManager, Assembly-CSharp
+        m_MethodName: ShowCalculationResult
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &331798705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1367,7 +1379,7 @@ GameObject:
   - component: {fileID: 402132857}
   m_Layer: 5
   m_Name: Content (4)
-  m_TagString: Untagged
+  m_TagString: Bloque4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1458,7 +1470,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: G2
+  m_Text: G0
 --- !u!222 &402132860
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1583,7 +1595,7 @@ GameObject:
   - component: {fileID: 428107409}
   m_Layer: 5
   m_Name: '#Hab'
-  m_TagString: Untagged
+  m_TagString: Bloque1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1674,7 +1686,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Habitaciones: 300'
+  m_Text: 'Habitaciones: 0'
 --- !u!222 &428107412
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1698,7 +1710,7 @@ GameObject:
   - component: {fileID: 459540691}
   m_Layer: 5
   m_Name: '#Hab'
-  m_TagString: Untagged
+  m_TagString: Bloque3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1789,7 +1801,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Habitaciones: 300'
+  m_Text: 'Habitaciones: 0'
 --- !u!222 &459540694
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1807,6 +1819,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 512270731}
+  - component: {fileID: 512270732}
   m_Layer: 5
   m_Name: Numero de Habitaciones
   m_TagString: Untagged
@@ -1834,6 +1847,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &512270732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512270730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 493bb23fe9e9a4f42904807fc8d4949f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputField: {fileID: 1866783643}
+  namesOfContents:
+  - 'Habitaciones: '
+  - K
+  - Q
+  - K
+  - Q
+  - G
+  - M
+  - P
+  - Pie
+  - 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2047,7 +2084,7 @@ GameObject:
   - component: {fileID: 544522961}
   m_Layer: 5
   m_Name: Content (1)
-  m_TagString: Untagged
+  m_TagString: Bloque4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2138,7 +2175,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Q2
+  m_Text: Q0
 --- !u!222 &544522964
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2354,7 +2391,7 @@ GameObject:
   - component: {fileID: 584830587}
   m_Layer: 5
   m_Name: Content (5)
-  m_TagString: Untagged
+  m_TagString: Bloque4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2445,7 +2482,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: M2
+  m_Text: M0
 --- !u!222 &584830590
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2765,7 +2802,7 @@ GameObject:
   - component: {fileID: 657025954}
   m_Layer: 5
   m_Name: Content (7)
-  m_TagString: Untagged
+  m_TagString: Bloque3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2856,7 +2893,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pie2
+  m_Text: Pie0
 --- !u!222 &657025957
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2880,7 +2917,7 @@ GameObject:
   - component: {fileID: 688891262}
   m_Layer: 5
   m_Name: Content (7)
-  m_TagString: Untagged
+  m_TagString: Bloque2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2971,7 +3008,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pie2
+  m_Text: Pie0
 --- !u!222 &688891265
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3116,7 +3153,7 @@ GameObject:
   - component: {fileID: 717813247}
   m_Layer: 5
   m_Name: Content (4)
-  m_TagString: Untagged
+  m_TagString: Bloque3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3207,7 +3244,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: G2
+  m_Text: G0
 --- !u!222 &717813250
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3425,7 +3462,7 @@ GameObject:
   - component: {fileID: 806166885}
   m_Layer: 5
   m_Name: Content (7)
-  m_TagString: Untagged
+  m_TagString: Bloque1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3516,7 +3553,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pie2
+  m_Text: Pie0
 --- !u!222 &806166888
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3655,7 +3692,7 @@ GameObject:
   - component: {fileID: 896799145}
   m_Layer: 5
   m_Name: Content (6)
-  m_TagString: Untagged
+  m_TagString: Bloque2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3746,7 +3783,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: P2
+  m_Text: P0
 --- !u!222 &896799148
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3891,7 +3928,7 @@ GameObject:
   - component: {fileID: 898465634}
   m_Layer: 5
   m_Name: Content (2)
-  m_TagString: Untagged
+  m_TagString: Bloque4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3982,7 +4019,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: K2
+  m_Text: K0
 --- !u!222 &898465637
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4006,7 +4043,7 @@ GameObject:
   - component: {fileID: 909879579}
   m_Layer: 5
   m_Name: Content (5)
-  m_TagString: Untagged
+  m_TagString: Bloque2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4097,7 +4134,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: M2
+  m_Text: M0
 --- !u!222 &909879582
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4106,6 +4143,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909879577}
   m_CullTransparentMesh: 1
+--- !u!1 &936500547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 936500548}
+  m_Layer: 0
+  m_Name: AppManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &936500548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936500547}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.4527184, y: -0.15145962, z: -0.41944867}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &938750254
 GameObject:
   m_ObjectHideFlags: 0
@@ -4121,7 +4188,7 @@ GameObject:
   - component: {fileID: 938750256}
   m_Layer: 5
   m_Name: Content
-  m_TagString: Untagged
+  m_TagString: Bloque3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4212,7 +4279,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: K2
+  m_Text: K0
 --- !u!222 &938750259
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4236,7 +4303,7 @@ GameObject:
   - component: {fileID: 957219746}
   m_Layer: 5
   m_Name: Content (2)
-  m_TagString: Untagged
+  m_TagString: Bloque3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4327,7 +4394,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: K2
+  m_Text: K0
 --- !u!222 &957219749
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4466,7 +4533,7 @@ GameObject:
   - component: {fileID: 1026745707}
   m_Layer: 5
   m_Name: Content (6)
-  m_TagString: Untagged
+  m_TagString: Bloque1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4557,7 +4624,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: P2
+  m_Text: P0
 --- !u!222 &1026745710
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4581,7 +4648,7 @@ GameObject:
   - component: {fileID: 1092872738}
   m_Layer: 5
   m_Name: Content (3)
-  m_TagString: Untagged
+  m_TagString: Bloque1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4672,7 +4739,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Q2
+  m_Text: Q0
 --- !u!222 &1092872741
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4811,7 +4878,7 @@ GameObject:
   - component: {fileID: 1197514516}
   m_Layer: 5
   m_Name: Content (3)
-  m_TagString: Untagged
+  m_TagString: Bloque2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4902,7 +4969,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Q2
+  m_Text: Q0
 --- !u!222 &1197514519
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5047,7 +5114,7 @@ GameObject:
   - component: {fileID: 1269846573}
   m_Layer: 5
   m_Name: Content
-  m_TagString: Untagged
+  m_TagString: Bloque4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5138,7 +5205,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: K2
+  m_Text: K0
 --- !u!222 &1269846576
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5362,7 +5429,7 @@ GameObject:
   - component: {fileID: 1405773967}
   m_Layer: 5
   m_Name: Content (7)
-  m_TagString: Untagged
+  m_TagString: Bloque4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5453,7 +5520,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pie2
+  m_Text: Pie0
 --- !u!222 &1405773970
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5656,7 +5723,7 @@ GameObject:
   - component: {fileID: 1538517256}
   m_Layer: 5
   m_Name: Content (8)
-  m_TagString: Untagged
+  m_TagString: Bloque1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5747,7 +5814,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2
+  m_Text: 0
 --- !u!222 &1538517259
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5771,7 +5838,7 @@ GameObject:
   - component: {fileID: 1548626762}
   m_Layer: 5
   m_Name: Content (5)
-  m_TagString: Untagged
+  m_TagString: Bloque1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5862,7 +5929,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: M2
+  m_Text: M0
 --- !u!222 &1548626765
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6001,7 +6068,7 @@ GameObject:
   - component: {fileID: 1630763609}
   m_Layer: 5
   m_Name: Content
-  m_TagString: Untagged
+  m_TagString: Bloque1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6078,7 +6145,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: K2
+  m_Text: K0
 --- !u!222 &1630763611
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6116,7 +6183,7 @@ GameObject:
   - component: {fileID: 1638081682}
   m_Layer: 5
   m_Name: Content (4)
-  m_TagString: Untagged
+  m_TagString: Bloque1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6207,7 +6274,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: G2
+  m_Text: G0
 --- !u!222 &1638081685
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6389,7 +6456,7 @@ GameObject:
   - component: {fileID: 1665267127}
   m_Layer: 5
   m_Name: Content (4)
-  m_TagString: Untagged
+  m_TagString: Bloque2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6480,7 +6547,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: G2
+  m_Text: G0
 --- !u!222 &1665267130
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6504,7 +6571,7 @@ GameObject:
   - component: {fileID: 1666670525}
   m_Layer: 5
   m_Name: Content (3)
-  m_TagString: Untagged
+  m_TagString: Bloque3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6595,7 +6662,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Q2
+  m_Text: Q0
 --- !u!222 &1666670528
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6619,7 +6686,7 @@ GameObject:
   - component: {fileID: 1672494154}
   m_Layer: 5
   m_Name: Content
-  m_TagString: Untagged
+  m_TagString: Bloque2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6710,7 +6777,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: K2
+  m_Text: K0
 --- !u!222 &1672494157
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6983,7 +7050,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1807261166}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 512270732}
+        m_TargetAssemblyTypeName: FunctionOneManager, Assembly-CSharp
+        m_MethodName: ClearHistory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1807261166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7037,7 +7116,7 @@ GameObject:
   - component: {fileID: 1819021698}
   m_Layer: 5
   m_Name: Content (3)
-  m_TagString: Untagged
+  m_TagString: Bloque4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7128,7 +7207,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Q2
+  m_Text: Q0
 --- !u!222 &1819021701
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7152,7 +7231,7 @@ GameObject:
   - component: {fileID: 1821522495}
   m_Layer: 5
   m_Name: Content (8)
-  m_TagString: Untagged
+  m_TagString: Bloque3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7243,7 +7322,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2
+  m_Text: 0
 --- !u!222 &1821522498
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7267,7 +7346,7 @@ GameObject:
   - component: {fileID: 1822399666}
   m_Layer: 5
   m_Name: Content (2)
-  m_TagString: Untagged
+  m_TagString: Bloque2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7358,7 +7437,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: K2
+  m_Text: K0
 --- !u!222 &1822399669
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7640,7 +7719,7 @@ GameObject:
   - component: {fileID: 1954096623}
   m_Layer: 5
   m_Name: Content (6)
-  m_TagString: Untagged
+  m_TagString: Bloque3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7731,7 +7810,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: P2
+  m_Text: P0
 --- !u!222 &1954096626
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7834,7 +7913,7 @@ GameObject:
   - component: {fileID: 1984569579}
   m_Layer: 5
   m_Name: Content (2)
-  m_TagString: Untagged
+  m_TagString: Bloque1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7925,7 +8004,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: K2
+  m_Text: K0
 --- !u!222 &1984569582
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7949,7 +8028,7 @@ GameObject:
   - component: {fileID: 1990424185}
   m_Layer: 5
   m_Name: Content (8)
-  m_TagString: Untagged
+  m_TagString: Bloque2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8040,7 +8119,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2
+  m_Text: 0
 --- !u!222 &1990424188
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8064,7 +8143,7 @@ GameObject:
   - component: {fileID: 2003843080}
   m_Layer: 5
   m_Name: Content (1)
-  m_TagString: Untagged
+  m_TagString: Bloque3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8155,7 +8234,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Q2
+  m_Text: Q0
 --- !u!222 &2003843083
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8294,7 +8373,7 @@ GameObject:
   - component: {fileID: 2021089714}
   m_Layer: 5
   m_Name: Content (6)
-  m_TagString: Untagged
+  m_TagString: Bloque4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8385,7 +8464,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: P2
+  m_Text: P0
 --- !u!222 &2021089717
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8409,7 +8488,7 @@ GameObject:
   - component: {fileID: 2043013136}
   m_Layer: 5
   m_Name: '#Hab'
-  m_TagString: Untagged
+  m_TagString: Bloque2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8500,7 +8579,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Habitaciones: 300'
+  m_Text: 'Habitaciones: 0'
 --- !u!222 &2043013139
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8524,7 +8603,7 @@ GameObject:
   - component: {fileID: 2089445135}
   m_Layer: 5
   m_Name: Content (1)
-  m_TagString: Untagged
+  m_TagString: Bloque2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8615,7 +8694,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Q2
+  m_Text: Q0
 --- !u!222 &2089445138
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8639,7 +8718,7 @@ GameObject:
   - component: {fileID: 2098929695}
   m_Layer: 5
   m_Name: Content (5)
-  m_TagString: Untagged
+  m_TagString: Bloque3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8730,7 +8809,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: M2
+  m_Text: M0
 --- !u!222 &2098929698
 CanvasRenderer:
   m_ObjectHideFlags: 0
