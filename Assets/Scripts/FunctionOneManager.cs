@@ -19,10 +19,10 @@ public class FunctionOneManager : MonoBehaviour
     
     [SerializeField] private InputField _inputField;
 
-    // [SerializeField] private GameObject[] _UIObjectsBlock1 = new GameObject[14];
-    // [SerializeField] private GameObject[] _UIObjectsBlock2 = new GameObject[14];
-    // [SerializeField] private GameObject[] _UIObjectsBlock3 = new GameObject[14];
-    // [SerializeField] private GameObject[] _UIObjectsBlock4 = new GameObject[14];
+    [SerializeField] private GameObject[] _UIObjectsBlock1;
+    [SerializeField] private GameObject[] _UIObjectsBlock2;
+    [SerializeField] private GameObject[] _UIObjectsBlock3;
+    [SerializeField] private GameObject[] _UIObjectsBlock4;
     
     private GameObject[][] _UIObjectsBlocksList = new GameObject[4][];
 
@@ -42,10 +42,15 @@ public class FunctionOneManager : MonoBehaviour
 
     private void LoadUIObjectList()
     {
-        for (int i = 0; i < _UIObjectsBlocksList.Length; i++)
-        {
-            _UIObjectsBlocksList[i] = GameObject.FindGameObjectsWithTag("Bloque" + (i + 1));
-        }
+        // for (int i = 0; i < _UIObjectsBlocksList.Length; i++)
+        // {
+        //     _UIObjectsBlocksList[i] = GameObject.FindGameObjectsWithTag("Bloque" + (i + 1));
+        // }
+        //Toco hacerlo asi porque con los tags perdia el orden que tienen en unity
+        _UIObjectsBlocksList[0] = _UIObjectsBlock1;
+        _UIObjectsBlocksList[1] = _UIObjectsBlock2;
+        _UIObjectsBlocksList[2] = _UIObjectsBlock3;
+        _UIObjectsBlocksList[3] = _UIObjectsBlock4;
     }
     
     public void ShowCalculationResult()
@@ -68,7 +73,7 @@ public class FunctionOneManager : MonoBehaviour
     private void FillFirstBlock(int[] rsp, int nroHab)
     {
         _UIObjectsBlocksList[0][0].GetComponent<Text>().text = namesOfContents[0] + nroHab;
-        for (int i = 1; i < namesOfContents.Length; i++)
+        for (int i = 1; i < _UIObjectsBlocksList[0].Length; i++)
         {
             _UIObjectsBlocksList[0][i].GetComponent<Text>().text = namesOfContents[i] + rsp[i - 1];
         }
@@ -93,6 +98,14 @@ public class FunctionOneManager : MonoBehaviour
                 _UIObjectsBlocksList[i][j].GetComponent<Text>().text = namesOfContents[j] + 0;
             }
         }
+        
+        // for (int i = 0 ; i < _UIObjectsBlocksList.Length ; i++)
+        // {
+        //     for (int j = 0; j < _UIObjectsBlocksList[i].Length ; j++)
+        //     {
+        //         Debug.Log(_UIObjectsBlocksList[i][j].name);
+        //     }
+        // }
     }
     
     // private int CheckBlockAvailable()

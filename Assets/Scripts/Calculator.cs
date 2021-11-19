@@ -6,7 +6,8 @@ public static class Calculator
     public static int[] ForNroHab(int hab, bool onlySheets = false)
     {
         int[] rsp = new int[9];
-        int SK, SQ, DK, DQ, TGMP, Tp, PC, towelExtra;
+        int SK, SQ, DK, DQ, TGMP, Tp, PC;
+        int towelExtra;
 
         rsp[0] = SK = hab * 2;
         rsp[1] = SQ = hab * 4;
@@ -15,7 +16,7 @@ public static class Calculator
         
         //Calculo de las toallas sobre hab que tienen 3 baños, 1/4 del total de las hab
         //tienen 3 baños
-        towelExtra = (hab * 1 / 4) * 2;
+        towelExtra = (int)Math.Round(Convert.ToDouble((hab * 1 / 4f) * 2));
         rsp[4] = rsp[5] = rsp[6] =TGMP = (hab * 4) + towelExtra;
         rsp[7] = Tp = (int)Math.Round(TGMP/2f);
         
