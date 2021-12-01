@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI strings Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UI strings
+  m_TableCollectionNameGuidString: 40717eb99343f6447923d89bbd6f7fad
+  m_Entries:
+  - m_Id: 4313117130752
+    m_Key: habitaciones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5598117658624
+    m_Key: sabanas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5927064338432
+    m_Key: camaGrande
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6053208031232
+    m_Key: camaPequena
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6090180820992
+    m_Key: duvets
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6112024756224
+    m_Key: toallas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6270170988544
+    m_Key: toallaGrande
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6289909383168
+    m_Key: toallaMediana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6306619490304
+    m_Key: toallaPequena
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6329499418624
+    m_Key: toallaPies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6376479817728
+    m_Key: fundas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7252648951808
+    m_Key: historial
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1638310402657

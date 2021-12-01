@@ -1,6 +1,8 @@
 using System;
+using UnityEditor.Localization;
 using UnityEditor.UIElements;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 
 public class FunctionOneManager : MonoBehaviour
@@ -77,6 +79,16 @@ public class FunctionOneManager : MonoBehaviour
         {
             _UIObjectsBlocksList[0][i].GetComponent<Text>().text = namesOfContents[i] + rsp[i - 1];
         }
+        
+        //TODO crear variable independiente para cada bloque del historial
+        //prueba
+        //print(LocalizationEditorSettings.GetStringTableCollection("UI strings").);
+        // var op = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("UI strings", 
+        //     "sabanas");
+        // if (op.IsDone)
+        //     Debug.Log("1ro: " + op.Result);
+        // else
+        //     op.Completed += (op) => Debug.Log("2do: " + op.Result);
     }
     private void OrganizeBlocks()
     {
