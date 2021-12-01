@@ -1,8 +1,5 @@
 using System;
-using UnityEditor.Localization;
-using UnityEditor.UIElements;
 using UnityEngine;
-using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 
 public class FunctionOneManager : MonoBehaviour

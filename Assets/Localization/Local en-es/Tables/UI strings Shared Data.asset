@@ -24,11 +24,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5927064338432
-    m_Key: camaGrande
+    m_Key: king
     m_Metadata:
       m_Items: []
   - m_Id: 6053208031232
-    m_Key: camaPequena
+    m_Key: queen
     m_Metadata:
       m_Items: []
   - m_Id: 6090180820992
@@ -52,7 +52,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6329499418624
-    m_Key: toallaPies
+    m_Key: toallaPiso
     m_Metadata:
       m_Items: []
   - m_Id: 6376479817728
@@ -61,6 +61,34 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 7252648951808
     m_Key: historial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87342263074816
+    m_Key: unidades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90887758577664
+    m_Key: limpiar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90903151673344
+    m_Key: nroHab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90926648164352
+    m_Key: calcular
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91460113301504
+    m_Key: funcNrohab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91504669392896
+    m_Key: funcCantMaterial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91840326959104
+    m_Key: hechoPor
     m_Metadata:
       m_Items: []
   m_Metadata:

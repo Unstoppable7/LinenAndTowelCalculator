@@ -19,51 +19,79 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 4313117130752
-    m_Localized: Rooms
+    m_Localized: 'Rooms:'
     m_Metadata:
       m_Items: []
   - m_Id: 5598117658624
-    m_Localized: Sheets
+    m_Localized: 'Sheets:'
     m_Metadata:
       m_Items: []
   - m_Id: 5927064338432
-    m_Localized: K
+    m_Localized: 'King:'
     m_Metadata:
       m_Items: []
   - m_Id: 6053208031232
-    m_Localized: Q
+    m_Localized: 'Queen:'
     m_Metadata:
       m_Items: []
   - m_Id: 6090180820992
-    m_Localized: Duvets
+    m_Localized: 'Duvets:'
     m_Metadata:
       m_Items: []
   - m_Id: 6112024756224
-    m_Localized: Towels
+    m_Localized: 'Towels:'
     m_Metadata:
       m_Items: []
   - m_Id: 6270170988544
-    m_Localized: B
+    m_Localized: 'Bath:'
     m_Metadata:
       m_Items: []
   - m_Id: 6289909383168
-    m_Localized: H
+    m_Localized: 'Hand:'
     m_Metadata:
       m_Items: []
   - m_Id: 6306619490304
-    m_Localized: WC
+    m_Localized: 'WashCloth:'
     m_Metadata:
       m_Items: []
   - m_Id: 6329499418624
-    m_Localized: BM
+    m_Localized: 'BathMat:'
     m_Metadata:
       m_Items: []
   - m_Id: 6376479817728
-    m_Localized: PillowCases
+    m_Localized: 'PillowCases:'
     m_Metadata:
       m_Items: []
   - m_Id: 7252648951808
     m_Localized: History
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87342263074816
+    m_Localized: Units
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90887758577664
+    m_Localized: Clean
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90903151673344
+    m_Localized: Number of rooms...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90926648164352
+    m_Localized: Calculate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91460113301504
+    m_Localized: Number of Rooms
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91504669392896
+    m_Localized: Amount of Material
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91840326959104
+    m_Localized: Made By Cristian Rosales
     m_Metadata:
       m_Items: []
   references:

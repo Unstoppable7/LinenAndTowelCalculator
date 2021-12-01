@@ -19,51 +19,79 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 4313117130752
-    m_Localized: Habitaciones
+    m_Localized: 'Habitaciones:'
     m_Metadata:
       m_Items: []
   - m_Id: 5598117658624
-    m_Localized: Sabanas
+    m_Localized: 'Sabanas:'
     m_Metadata:
       m_Items: []
   - m_Id: 5927064338432
-    m_Localized: G
+    m_Localized: 'King:'
     m_Metadata:
       m_Items: []
   - m_Id: 6053208031232
-    m_Localized: P
+    m_Localized: 'Queen:'
     m_Metadata:
       m_Items: []
   - m_Id: 6090180820992
-    m_Localized: Duvets
+    m_Localized: 'Duvets:'
     m_Metadata:
       m_Items: []
   - m_Id: 6112024756224
-    m_Localized: Toallas
+    m_Localized: 'Toallas:'
     m_Metadata:
       m_Items: []
   - m_Id: 6270170988544
-    m_Localized: G
+    m_Localized: 'Grande:'
     m_Metadata:
       m_Items: []
   - m_Id: 6289909383168
-    m_Localized: M
+    m_Localized: 'Mediana:'
     m_Metadata:
       m_Items: []
   - m_Id: 6306619490304
-    m_Localized: P
+    m_Localized: "Peque\xF1a:"
     m_Metadata:
       m_Items: []
   - m_Id: 6329499418624
-    m_Localized: Pie
+    m_Localized: 'Piso:'
     m_Metadata:
       m_Items: []
   - m_Id: 6376479817728
-    m_Localized: Fundas
+    m_Localized: 'Fundas:'
     m_Metadata:
       m_Items: []
   - m_Id: 7252648951808
     m_Localized: Historial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87342263074816
+    m_Localized: Unidades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90887758577664
+    m_Localized: Limpiar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90903151673344
+    m_Localized: Numero de habitaciones...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90926648164352
+    m_Localized: Calcular
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91460113301504
+    m_Localized: Numero de Habitaciones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91504669392896
+    m_Localized: Cantidad de material
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91840326959104
+    m_Localized: Hecho Por Cristian Rosales
     m_Metadata:
       m_Items: []
   references:
