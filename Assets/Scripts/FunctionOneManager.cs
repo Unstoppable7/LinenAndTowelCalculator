@@ -30,7 +30,10 @@ public class FunctionOneManager : MonoBehaviour
     private string _oldEditText;
     private string _editText;
     
-    #endregion    
+    #endregion
+
+    //[SerializeField] private VoidEventSO contentFillerEvent;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -41,8 +44,11 @@ public class FunctionOneManager : MonoBehaviour
             _inputField.onEndEdit.AddListener(EndEdit);
             _inputField.onValueChanged.AddListener(Editing);
         }
+        
+        //contentFillerEvent.RaiseEvent();
+
     }
-    
+
     private void Editing(string currentText)
     {
         _oldEditText = _editText;
@@ -64,12 +70,7 @@ public class FunctionOneManager : MonoBehaviour
         }
 
     }
-    
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 
     private void LoadUIObjectList()
     {
@@ -100,7 +101,8 @@ public class FunctionOneManager : MonoBehaviour
 
         OrganizeBlocks();
         FillFirstBlock(Calculator.ForNroHab(nroHab), nroHab);
-        
+        //contentFillerEvent.RaiseEvent();
+
     }
 
     private void FillFirstBlock(int[] rsp, int nroHab)
