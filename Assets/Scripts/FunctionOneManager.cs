@@ -1,5 +1,4 @@
 using System;
-using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,7 +25,7 @@ public class FunctionOneManager : MonoBehaviour
     
     private GameObject[][] _UIObjectsBlocksList = new GameObject[4][];
 
-    [SerializeField] private string[] namesOfContents;
+    //[SerializeField] private string[] namesOfContents;
     
     // Start is called before the first frame update
     void Start()
@@ -72,11 +71,21 @@ public class FunctionOneManager : MonoBehaviour
 
     private void FillFirstBlock(int[] rsp, int nroHab)
     {
-        _UIObjectsBlocksList[0][0].GetComponent<Text>().text = namesOfContents[0] + nroHab;
+        _UIObjectsBlocksList[0][0].GetComponent<Text>().text = nroHab.ToString();
         for (int i = 1; i < _UIObjectsBlocksList[0].Length; i++)
         {
-            _UIObjectsBlocksList[0][i].GetComponent<Text>().text = namesOfContents[i] + rsp[i - 1];
+            _UIObjectsBlocksList[0][i].GetComponent<Text>().text = rsp[i - 1].ToString();
         }
+        
+        //TODO crear variable independiente para cada bloque del historial
+        //prueba
+        //print(LocalizationEditorSettings.GetStringTableCollection("UI strings").);
+        // var op = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("UI strings", 
+        //     "sabanas");
+        // if (op.IsDone)
+        //     Debug.Log("1ro: " + op.Result);
+        // else
+        //     op.Completed += (op) => Debug.Log("2do: " + op.Result);
     }
     private void OrganizeBlocks()
     {
@@ -95,7 +104,7 @@ public class FunctionOneManager : MonoBehaviour
         {
             for (int j = 0; j < _UIObjectsBlocksList[i].Length ; j++)
             {
-                _UIObjectsBlocksList[i][j].GetComponent<Text>().text = namesOfContents[j] + 0;
+                _UIObjectsBlocksList[i][j].GetComponent<Text>().text = "0";
             }
         }
         

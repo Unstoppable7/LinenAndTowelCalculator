@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI strings_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 40717eb99343f6447923d89bbd6f7fad, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 4313117130752
+    m_Localized: 'Habitaciones:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5598117658624
+    m_Localized: 'Sabanas:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5927064338432
+    m_Localized: 'King:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6053208031232
+    m_Localized: 'Queen:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6090180820992
+    m_Localized: 'Duvets:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6112024756224
+    m_Localized: 'Toallas:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6270170988544
+    m_Localized: 'Grande:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6289909383168
+    m_Localized: 'Mediana:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6306619490304
+    m_Localized: "Peque\xF1a:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6329499418624
+    m_Localized: 'Piso:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6376479817728
+    m_Localized: 'Fundas:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7252648951808
+    m_Localized: Historial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87342263074816
+    m_Localized: Unidades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90887758577664
+    m_Localized: Limpiar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90903151673344
+    m_Localized: Numero de habitaciones...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90926648164352
+    m_Localized: Calcular
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91460113301504
+    m_Localized: Numero de Habitaciones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91504669392896
+    m_Localized: Cantidad de material
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91840326959104
+    m_Localized: Hecho Por Cristian Rosales
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
