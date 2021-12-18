@@ -25,14 +25,46 @@ public class FunctionOneManager : MonoBehaviour
     
     private GameObject[][] _UIObjectsBlocksList = new GameObject[4][];
 
-    //[SerializeField] private string[] namesOfContents;
+    #region variables for text lost when canceling keyboard
+
+    private string _oldEditText;
+    private string _editText;
     
+    #endregion    
     // Start is called before the first frame update
     void Start()
     {
         LoadUIObjectList();
-    }
+        if (Application.isMobilePlatform)
+        {
 
+            _inputField.onEndEdit.AddListener(EndEdit);
+            _inputField.onValueChanged.AddListener(Editing);
+        }
+    }
+    
+    private void Editing(string currentText)
+    {
+        _oldEditText = _editText;
+        _editText = currentText;
+    }
+    private void EndEdit(string currentText)
+    {
+        if (_inputField.touchScreenKeyboard.status == TouchScreenKeyboard.Status.Canceled && 
+            !string.IsNullOrEmpty(_oldEditText))
+        {
+            _editText = _oldEditText;
+            _inputField.text = _oldEditText;
+        }
+        
+        if (_inputField.touchScreenKeyboard.status == TouchScreenKeyboard.Status.Done)
+        {
+            ShowCalculationResult();
+            _inputField.text = "";
+        }
+
+    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -51,6 +83,8 @@ public class FunctionOneManager : MonoBehaviour
         _UIObjectsBlocksList[2] = _UIObjectsBlock3;
         _UIObjectsBlocksList[3] = _UIObjectsBlock4;
     }
+    
+    
     
     public void ShowCalculationResult()
     {
