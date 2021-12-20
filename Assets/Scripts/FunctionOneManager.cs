@@ -25,7 +25,7 @@ public class FunctionOneManager : MonoBehaviour
     [SerializeField] private GameObject[] _UIObjectsBlock4;
     
     private GameObject[][] _UIObjectsBlocksList = new GameObject[4][];
-
+    
     #region variables for text lost when canceling keyboard
 
     private string _oldEditText;
@@ -34,7 +34,7 @@ public class FunctionOneManager : MonoBehaviour
     #endregion
 
     [SerializeField] private VoidEventSO contentFillerEvent;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,8 +46,18 @@ public class FunctionOneManager : MonoBehaviour
             _inputField.onValueChanged.AddListener(Editing);
         }
         
-        //contentFillerEvent.RaiseEvent();
+    }
 
+    private void Update()
+    {
+        if (Application.platform == RuntimePlatform.Android) {
+        
+            // Volver a atras con el boton o el gesto de Android
+            if (Input.GetKeyDown(KeyCode.Escape)){
+                
+                gameObject.SetActive(false);
+            }
+        }
     }
 
     public void RaiseContentFillerEvent()

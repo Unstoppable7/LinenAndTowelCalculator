@@ -64,7 +64,7 @@ PlayerSettings:
   use32BitDisplayBuffer: 1
   preserveFramebufferAlpha: 0
   disableDepthAndStencilBuffers: 0
-  androidStartInFullscreen: 1
+  androidStartInFullscreen: 0
   androidRenderOutsideSafeArea: 1
   androidUseSwappy: 1
   androidBlitType: 2
@@ -135,7 +135,8 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 1.0.2
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: 118582a4d9ab2d74b8942bf50ad5ba40, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
