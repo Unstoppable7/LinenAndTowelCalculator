@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -32,7 +33,7 @@ public class FunctionOneManager : MonoBehaviour
     
     #endregion
 
-    //[SerializeField] private VoidEventSO contentFillerEvent;
+    [SerializeField] private VoidEventSO contentFillerEvent;
     
     // Start is called before the first frame update
     void Start()
@@ -49,6 +50,11 @@ public class FunctionOneManager : MonoBehaviour
 
     }
 
+    public void RaiseContentFillerEvent()
+    {
+        contentFillerEvent.RaiseEvent();
+    }
+    
     private void Editing(string currentText)
     {
         _oldEditText = _editText;
@@ -84,8 +90,13 @@ public class FunctionOneManager : MonoBehaviour
         _UIObjectsBlocksList[2] = _UIObjectsBlock3;
         _UIObjectsBlocksList[3] = _UIObjectsBlock4;
     }
-    
-    
+
+    private IEnumerator InitContentFillerEvent()
+    {
+        yield return new WaitForEndOfFrame();
+        contentFillerEvent.RaiseEvent();
+
+    }
     
     public void ShowCalculationResult()
     {
@@ -101,8 +112,8 @@ public class FunctionOneManager : MonoBehaviour
 
         OrganizeBlocks();
         FillFirstBlock(Calculator.ForNroHab(nroHab), nroHab);
-        //contentFillerEvent.RaiseEvent();
 
+        StartCoroutine(InitContentFillerEvent());
     }
 
     private void FillFirstBlock(int[] rsp, int nroHab)
@@ -143,14 +154,8 @@ public class FunctionOneManager : MonoBehaviour
                 _UIObjectsBlocksList[i][j].GetComponent<Text>().text = "0";
             }
         }
-        
-        // for (int i = 0 ; i < _UIObjectsBlocksList.Length ; i++)
-        // {
-        //     for (int j = 0; j < _UIObjectsBlocksList[i].Length ; j++)
-        //     {
-        //         Debug.Log(_UIObjectsBlocksList[i][j].name);
-        //     }
-        // }
+        StartCoroutine(InitContentFillerEvent());
+
     }
     
     // private int CheckBlockAvailable()

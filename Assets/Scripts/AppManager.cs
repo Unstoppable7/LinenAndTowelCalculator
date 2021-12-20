@@ -17,5 +17,19 @@ public class AppManager : MonoBehaviour
     {
         
     }
+
+    private IEnumerator InitOneFunction()
+    {
+        _functionOneManager.gameObject.SetActive(true);
+        
+        yield return new WaitForEndOfFrame();
+        
+        _functionOneManager.RaiseContentFillerEvent();
+    }
+
+    public void StartInitOneFunction()
+    {
+        StartCoroutine(InitOneFunction());
+    }
     
 }

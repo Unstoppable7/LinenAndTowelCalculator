@@ -11,27 +11,29 @@ public class ContentFiller : MonoBehaviour
     [SerializeField] private RectTransform secondPreviousContent;
     [SerializeField] private int paddingFlowLayoutGroup;
 
-    //[SerializeField] private VoidEventSO fillContentEvent;
+    [SerializeField] private VoidEventSO fillContentEvent;
     
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
-        //fillContentEvent.OnEventRaised += FillContent;
+        fillContentEvent.OnEventRaised += FillContent;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        FillContent();
+        //FillContent();
     }
 
     public void FillContent()
     {
         GetComponent<LayoutElement>().preferredWidth = containerWidth.rect.width - 
         firstPreviousContent.rect.width - secondPreviousContent.rect.width - paddingFlowLayoutGroup - .5f;
+        
+        Debug.LogWarning("Ejecuto FillContent");
     }
 
     private void OnDisable()
     {
-        //fillContentEvent.OnEventRaised -= FillContent;
+        fillContentEvent.OnEventRaised -= FillContent;
     }
 }
