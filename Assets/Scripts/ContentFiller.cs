@@ -29,7 +29,6 @@ public class ContentFiller : MonoBehaviour
         GetComponent<LayoutElement>().preferredWidth = containerWidth.rect.width - 
         firstPreviousContent.rect.width - secondPreviousContent.rect.width - paddingFlowLayoutGroup - .5f;
         
-        Debug.LogWarning("Ejecuto FillContent");
     }
 
     private void OnDisable()
